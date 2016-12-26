@@ -1,0 +1,13 @@
+// Now, we suppose that my words need search which is "hibernate spring mvc"
+
+http://www.journaldev.com/ (30/100)
+https://www.mkyong.com (51/100)
+https://examples.javacodegeeks.com (58/100)
+https://www.tutorialspoint.com (68/100)
+http://www.javaworld.com/ (78/100)
+http://hibernate.org/search/documentation/getting-started/ (78/100)
+docs.spring.io/spring/docs/current/spring-framework-reference/html/orm.html (78/100)
+https://dzone.com/tutorials/java/hibernate/hibernate-example/ (79/100)
+https://docs.jboss.org/hibernate/orm (79/100)
+https://netbeans.org/kb/docs/web/hibernate-webapp.html (82/100)
+http://docs.oracle.com/ (98/100)
