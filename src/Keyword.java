@@ -1,11 +1,14 @@
-package filter.database;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class KeywordFilter {
+import filter.controller.Url;
+
+//tam thoi class nay k dung den
+public class Keyword{
 
 	private static Map<String, Integer> map = new HashMap<>();
 	private static List<String> keywords = new ArrayList<String>();
@@ -36,7 +39,7 @@ public class KeywordFilter {
 	public static String getWordList(String url, boolean bl) throws Exception{
 		List<String> urls = Url.getWebpageLinks(url);
 		List<String> titles = new ArrayList<String>();
-		String s = Url.getHtmlByUrl(url).toString(), title = "";
+		String s = Url.getHtml(url).toString(), title = "";
 		
 		int n = s.length();
 		int i = 0, beginIndex = 0, endIndex = -1, title_index = 0;
@@ -58,7 +61,7 @@ public class KeywordFilter {
 		List<String> urls = Url.getWebpageLinks(url);
 
 		for(String u : urls){
-			getWordList(Url.getContentByUrl(u));
+			getWordList(Url.getContent(u));
 		}
 	}
 	

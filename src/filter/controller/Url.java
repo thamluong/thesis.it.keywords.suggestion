@@ -1,4 +1,4 @@
-package filter.database;
+package filter.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +15,8 @@ public class Url {
 	final static String prefix = "https://www.google.com.vn/search?num=10&tbm=&q=";
 	final static List<String> urls = new ArrayList<String>();
 	
-	public static List<String> inputUrls(){
+	// list of URLs which is the input to get content of its page and start filter words with their frequency (one by one) 
+	public static List<String> input(){
 		
 		urls.add("http://www.journaldev.com/");
 		urls.add("https://www.mkyong.com");
@@ -32,7 +33,8 @@ public class Url {
 		return urls;
 	}
 
-	public static List<String> getUrlListByUrl(String url) throws Exception	{
+	// Get list related-URL in a URL
+	public static List<String> getUrls(String url) throws Exception	{
 		List<String> result = new ArrayList<String>();
 		String[] keys ;
 		Document doc;
@@ -70,7 +72,7 @@ public class Url {
 		return links;
 	}
 
-	public static String getContentByUrl(String url) throws Exception{
+	public static String getContent(String url) throws Exception{
 
 		Document doc;
 		String text = "";
@@ -87,7 +89,7 @@ public class Url {
 		return text;
 	}
 	
-	public static Element getHtmlByUrl(String url) throws Exception{
+	public static Element getHtml(String url) throws Exception{
 
 		Document doc;
 		Element content;

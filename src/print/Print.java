@@ -11,7 +11,7 @@ public class Print {
 	}
 
 	public static void print(Object temp, Object s){
-		System.out.println(temp.toString() + " = " + s.toString());
+		System.out.println(temp.toString() + " \t= " + s.toString());
 	}
 
 	public static void print(List<String> list){

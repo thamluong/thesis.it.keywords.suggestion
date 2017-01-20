@@ -1,4 +1,4 @@
-package filter.database;
+package filter.model;
 
 public class Key {
 	private int id;
